@@ -1,0 +1,89 @@
+nav.top-bar data-topbar="" 
+  ul.title-area
+    li.name
+      h1
+        a href="http://foundation.zurb.com"  Foundation
+  section.top-bar-section
+    /! Right Nav Section
+    ul.right
+      li.active
+        a href="https://github.com/zurb/foundation-rails"  GitHub
+      li.has-dropdown
+        a href="http://foundation.zurb.com/docs/"  Foundation Docs
+        ul.dropdown
+          li
+            a href="http://foundation.zurb.com/support/support.html"  Support
+      li.has-form
+        a.button data-reveal-id="signupModal" href=""  Sign Up
+ul data-orbit="" 
+  li
+    img src="http://placehold.it/1800x350/0079a1/ffffff&text=foundation-rails" /
+  li
+    img src="http://placehold.it/1800x350/0079a1/ffffff&text=foundation-rails" /
+  li
+    img src="http://placehold.it/1800x350/0079a1/ffffff&text=foundation-rails" /
+.row
+  .large-4.columns
+    ul.pricing-table
+      li.title Freelancer
+      li.price $99.99
+      li.description An awesome description
+      li.bullet-item 1 Database
+      li.bullet-item 5GB Storage
+      li.bullet-item 20 Users
+      li.cta-button
+        a.button href="#"  Buy Now
+  .large-4.columns
+    ul.pricing-table
+      li.title Startup
+      li.price $199.99
+      li.description An awesome description
+      li.bullet-item 1 Database
+      li.bullet-item 5GB Storage
+      li.bullet-item 20 Users
+      li.cta-button
+        a.button href="#"  Buy Now
+  .large-4.columns
+    ul.pricing-table
+      li.title Enterprise
+      li.price $999.99
+      li.description An awesome description
+      li.bullet-item 1 Database
+      li.bullet-item 5GB Storage
+      li.bullet-item 20 Users
+      li.cta-button
+        a.button href="#"  Buy Now
+hr
+  .row
+    .large-12.columns
+      h3.subheader Find out more!
+  .row
+    .large-12.columns
+      dl.tabs data-tab="" 
+        dd.active
+          a href="#panel2-1"  Overview
+        dd
+          a href="#panel2-2"  Features
+        dd
+          a href="#panel2-3"  Testimonials
+        dd
+          a href="#panel2-4"  History
+      .tabs-content
+        #panel2-1.content.active
+          p This is the first panel of the basic tab example. This is the first panel of the basic tab example.
+        #panel2-2.content
+          p This is the second panel of the basic tab example. This is the second panel of the basic tab example.
+        #panel2-3.content
+          p This is the third panel of the basic tab example. This is the third panel of the basic tab example.
+        #panel2-4.content
+          p This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.
+  #signupModal.reveal-modal data-reveal-modal="" 
+    h2 Awesome. I have it.
+    p.lead Your couch.  It is mine.
+    p Im a cool paragraph that lives inside of an even cooler modal. Wins
+    a.close-reveal-modal ×
+  = javascript_include_tag "jquery"
+  = javascript_include_tag "foundation"
+  javascript:
+    | $(document).foundation();
+    
